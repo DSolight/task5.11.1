@@ -27,9 +27,31 @@ h1 {
     background-color: aqua;
 }
 
-.news h2:first-child::before {
-    position:relative;
-    left: -5px;
+.news:nth-of-type(0n+1)::before {
+    position: relative;
+    left: 750;
+    top: 50;
+    background-color: red;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20%;
+    content: "NEW";
+}
+
+.news:nth-of-type(0n+2)::before {
+    position: relative;
+    left: 750;
+    top: 50;
+    background-color: red;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20%;
     content: "NEW";
 }
 
